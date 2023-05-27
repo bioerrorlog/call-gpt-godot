@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="LangChain Gogot"
+config/name="Call GPT Gogot"
 run/main_scene="res://src/Main.tscn"
 config/icon="res://icon.png"
 
