@@ -1,5 +1,7 @@
 extends HTTPRequest
 
+signal response_received(response)
+
 var openai_url = "https://api.openai.com/v1/chat/completions"
 
 func _init():

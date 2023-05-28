@@ -32,7 +32,7 @@ func _on_TalkButton_pressed():
 func _on_SaveButton_pressed():
 	save_manager.save_api(save_input.text)
 
-func _on_response_received(response):
+func _on_response_received(response: Array):
 	dialogues = response
 	dialogue_index = 0
 	display_dialogue()
