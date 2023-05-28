@@ -6,14 +6,12 @@ var dialogue_index = 0
 onready var dialogue_label = $CanvasLayer/Dialogue
 onready var user_input = $CanvasLayer/UserInput
 onready var save_input = $CanvasLayer/SaveInput
+onready var openai_api = $OpenAIApi
 
 onready var save_manager = preload("res://src/SaveManager.gd").new()
-onready var openai_api = preload("res://src/OpenAIApi.gd").new()
 
 func _ready():
-	add_child(openai_api)
 	openai_api.connect("response_received", self, "_on_response_received")
-
 	display_dialogue()
 
 func display_dialogue():
