@@ -1,5 +1,5 @@
-# langchain-godot
+# call-gpt-godot
 
-Sample for calling LangChain from the Godot Engine project.
+Sample for calling OpenAI API from the Godot Engine project.
 
 ![screen shot](./img/screenshot.png)
